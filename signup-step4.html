@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        main {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        fieldset {
+            width: 250px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        .login {
+            text-align: center;
+        }
+
+        select:not([type="radio"]):not([type="file"]) {
+            width: 100%;
+            padding: 5px;
+        }
+
+
+        .profile select {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .profile select {
+            width: 220px;
+        }
+
+        button {
+            padding: 7px 25px;
+            border-radius: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        button a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .forget {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 style="background-color: #007bff;color: #ffffff; margin: -10px;  padding: 10px;">&nbsp; DrOp CV</h1>
+        </nav>
+    </header>
+
+    <main>
+        <fieldset>
+            <div class="login">
+                <h1>Sign Up</h1>
+                <p>Preferences</p>
+
+                <form>
+
+                    <div class="gender">
+                        <label for="radio">Receive Notifations <input type="checkbox" readonly></label>
+                    </div>
+
+                    <div class="profile">
+                        <select name="Location" id="" required>
+                            <option value="">Preferred Job Location </option>
+                            <option value="">Hyderabad </option>
+                            <option value="">Karachi</option>
+                            <option value="">Islamabad </option>
+                            <option value="">Punjab</option>
+                        </select>
+                    </div>
+
+                    <button type="submit"><a href="./index.html">Submit</button></a>
+                    <p class="forget">Forget Password</p>
+                </form>
+            </div>
+        </fieldset>
+    </main>
+</body>
+
+</html>

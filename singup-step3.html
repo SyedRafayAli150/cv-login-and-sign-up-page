@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        main {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        fieldset {
+            width: 250px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        .login {
+            text-align: center;
+        }
+
+        input:not([type="radio"]):not([type="file"]) {
+            width: 100%;
+            padding: 5px;
+        }
+
+        select:not([type="radio"]):not([type="file"]) {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .gender {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .profile input {
+            width: 220px;
+        }
+
+        button {
+            padding: 7px 25px;
+            border-radius: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        button a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .textdate {
+            margin-left: -125px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 style="background-color: #007bff;color: #ffffff; margin: -10px;  padding: 10px;">&nbsp; DrOp CV</h1>
+        </nav>
+    </header>
+
+    <main>
+        <fieldset>
+            <div class="login">
+                <h1>Sign Up</h1>
+                <p>Work Experience</p>
+
+                <form>
+                    <input type="text" placeholder="Current Job Tittle" name="Current Job" required>
+                    <br><br>
+
+                    <input type="text" placeholder="Years of Experience" name="Experience" required>
+                    <br><br>
+
+                    <label for="date" class="textdate">Employment Start Date.</label>
+                    <input type="date" name="dob" aria-label="Date of birth" required>
+                    <br>
+
+                    <div class="profile">
+                        <label for="profile">Upload Resume</label>
+                        <input type="file" id="profile" name="Resume" required>
+                    </div>
+
+                    <select name="text" id="Skills">
+                        <option value="">HTML</option>
+                        <option value="">CSS</option>
+                        <option value="">JAVA</option>
+                        <option value="">Other</option>
+                    </select>
+                    <br><br>
+
+
+
+
+                    <button type="submit"><a href="./signup-step4.html">Next</button></a>
+                </form>
+            </div>
+        </fieldset>
+    </main>
+</body>
+
+</html>

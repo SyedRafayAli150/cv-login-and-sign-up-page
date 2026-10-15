@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        main {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+        fieldset {
+            width: 100%;
+            max-width: 350px;
+            padding: 25px;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        .login {
+            text-align: center;
+        }
+
+        .login input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #999;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 7px 25px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        .footer-text a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        button a {
+            color: #ffffff;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 style="background-color: #007bff;color: #ffffff; margin: -10px;  padding: 10px;">&nbsp; DrOp CV</h1>
+        </nav>
+    </header>
+
+    <main>
+        <fieldset>
+            <div class="login">
+
+                <h1>Login</h1>
+
+                <form action="#" method="post">
+                    <input type="email" placeholder="you@example.com" name="email" autocomplete="email" required>
+                    <br><br>
+
+                    <input type="password" placeholder="Password" name="password" autocomplete="current-password"
+                        required>
+                    <br><br>
+
+                    <button type="submit"><a href="#">Login</a></button>
+                </form>
+
+                <footer>
+                    <p class="footer-text">
+                        Don't have an account?
+                        <a href="signup-step1.html">Sign up</a>
+                    </p>
+                </footer>
+
+            </div>
+        </fieldset>
+    </main>
+</body>
+
+</html>

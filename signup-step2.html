@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Contect</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        main {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        fieldset {
+            width: 250px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        .login {
+            text-align: center;
+        }
+
+        input:not([type="radio"]):not([type="file"]) {
+            width: 100%;
+            padding: 5px;
+        }
+
+        select:not([type="radio"]):not([type="file"]) {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .gender {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .profile {
+            width: 320px;
+        }
+
+        button {
+            padding: 7px 25px;
+            border-radius: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        button a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 style="background-color: #007bff;color: #ffffff; margin: -10px;  padding: 10px;">&nbsp; DrOp CV</h1>
+        </nav>
+    </header>
+
+    <main>
+        <fieldset>
+            <div class="login">
+                <h1>Sign Up</h1>
+                <p>Content Information</p>
+
+                <form>
+                    <input type="number" placeholder="Phone Number" name="number" required>
+                    <br><br>
+
+                    <select name="" id="">
+                        <option value="">Pakistan</option>
+                        <option value="">US</option>
+                        <option value="">Canada</option>
+                    </select>
+                    <br><br>
+
+                    <input type="text" placeholder="Address" name="Address " required>
+                    <br><br>
+                    <select name="contect" id="" aria-placeholder="preferred contect method">
+                        <option value="">Contect Method 1</option>
+                        <option value="">Contect Method 2</option>
+                        <option value="">Contect Method 3</option>
+                        <option value="">Contect Method 4</option>
+                    </select>
+                    <!-- <br><br>              -->
+                    <div class="profile">
+                        <label for="Conditions">Agrement to Terms</label>
+                        <input type="radio" name="gender" required>
+                    </div>
+                    <!-- <br> -->
+                    <button type="submit"><a href="./singup-step3.html">Next</button></a>
+                </form>
+            </div>
+        </fieldset>
+    </main>
+</body>
+
+</html>

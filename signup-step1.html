@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        main {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        fieldset {
+            width: 250px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        .login {
+            text-align: center;
+        }
+
+        input:not([type="radio"]):not([type="file"]) {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .gender {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .profile input {
+            width: 220px;
+        }
+
+        button {
+            padding: 7px 25px;
+            border-radius: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        button a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 style="background-color: #007bff;color: #ffffff; margin: -10px;  padding: 10px;">&nbsp; DrOp CV</h1>
+        </nav>
+    </header>
+
+    <main>
+        <fieldset>
+            <div class="login">
+                <h1>Sign Up</h1>
+                <p>General Information</p>
+
+                <form>
+                    <input type="text" placeholder="Name" name="name" required>
+                    <br><br>
+
+                    <input type="email" placeholder="you@example.com" name="email" required>
+                    <br><br>
+
+                    <input type="password" placeholder="Password" name="password" required>
+                    <br><br>
+
+                    <input type="date" name="dob" aria-label="Date of birth" required>
+                    <br><br>
+
+                    <div class="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male" required>
+
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                    </div>
+
+                    <div class="profile">
+                        <label for="profile">Profile</label>
+                        <input type="file" id="profile" name="profile" required>
+                    </div>
+
+                    <hr>
+
+                    <button type="submit"><a href="./signup-step2.html">Next</button></a>
+                </form>
+            </div>
+        </fieldset>
+    </main>
+</body>
+
+</html>
